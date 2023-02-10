@@ -8,21 +8,55 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: open_sans;
+    src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
 General {
     font-family: Roboto, Open Sans;
     color:
         #202124 #4a4a4a #f7f7f7 #fff;
 }
 
+
+
+
 /*######################################
-                HEADER
+HEADER
 ######################################*/
+header {
+    height: 75vh;
+    background-image: url("../img/titel-bild.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+header div {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 35vh;
+}
 
+h1 {
+    font-family: roboto;
+    font-weight: 500;
+    color: #fff;
+    
+}
 
+header div img{
+    padding-top: 20vh;
+}
 
 /*######################################
-                MAIN
+MAIN
 ######################################*/
 
 
