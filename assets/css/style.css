@@ -24,11 +24,57 @@ General {
         #202124 #4a4a4a #f7f7f7 #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+main {
+    background-color: #f7f7f7;
+}
 
+h1,
+h2 {
+    font-family: roboto;
+    /* font-weight: 500; */
+    color: #fff;
+
+}
+
+.h1_lighter {
+    font-weight: 500;
+}
+
+h2 {
+    color: #202124;
+}
+
+p {
+    font-family: open_sans;
+    font-weight: 500;
+    color: #4a4a4a;
+    font-size: 0.8em;
+    margin-top: 0.8em;
+
+}
+
+a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+div.sticker {
+    position: sticky;
+    top: 98vh;
+    text-align: right;
+    background-color: #fff;
+}
+
+div.sticker p {
+    margin: 0;
+}
 
 /*######################################
-HEADER
+                HEADER
 ######################################*/
 header {
     height: 75vh;
@@ -44,24 +90,81 @@ header div {
     padding-top: 35vh;
 }
 
-h1 {
-    font-family: roboto;
-    font-weight: 500;
-    color: #fff;
-    
-}
-
-header div img{
+header div img {
     padding-top: 20vh;
 }
 
 /*######################################
-MAIN
+                MAIN
 ######################################*/
 
+main article {
+    width: 70%;
+    padding-top: 25vh;
+    margin: 0 auto 7vh;
+    text-align: center;
+}
 
+.spacer {
+    padding: 0 0 25vh;
+}
 
+main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding-bottom: 25vh; */
+}
+
+main section:nth-of-type(2) {
+    padding: 0 0 15vh;
+}
+
+main section img {
+    width: 45%;
+    aspect-ratio: 16 / 9;
+}
+
+main section.gallery {
+    gap: 12px;
+}
 
 /*######################################
                 FOOTER
 ######################################*/
+
+footer article {
+    width: 43%;
+    margin: 0 auto;
+    padding: 15vh 0;
+    text-align: center;
+}
+
+footer article p {
+    font-size: 1.3em;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10vh
+}
+
+footer section div:nth-of-type(1) p {
+    padding-left: 35px;
+}
+
+footer section div p {
+    font-size: 0.6em;
+}
+
+footer section div a {
+    font-size: 0.6em;
+    color: #4a4a4a
+}
+
+footer section div a:hover {
+    text-decoration: underline;
+    color: #4a4a4a;
+}
